@@ -1,81 +1,4 @@
 /* ==========================================================================
-   Initialization
-   ========================================================================== */
-
-html,
-button,
-input,
-select,
-textarea {
-    color: #222;
-    outline: none;
-}
-
-html {
-    font-size: 16px;
-    line-height: 1.4;
-    background-color: #eef0fa;
-}
-
-::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-::selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
-
-audio,
-canvas,
-img,
-video {
-    vertical-align: middle;
-    max-width: 100%;
-}
-
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
-
-textarea {
-    resize: vertical;
-}
-
-h1, h2, h3, h4, h5, h6{
-    font-weight: normal;
-    margin: 0;
-}
-
-a{
-    text-decoration: none;
-}
-
-.browsehappy {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
-}
-
-
-
-
-
-
-/* ==========================================================================
    Fonts
    ========================================================================== */
 
@@ -150,6 +73,84 @@ a{
          url('fonts/pts55f_regular.svg#pt_sansregular') format('svg');
     font-weight: normal;
     font-style: normal;
+}
+
+
+
+
+
+
+/* ==========================================================================
+   Initialization
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+    outline: none;
+}
+
+html {
+    font-size: 16px;
+    line-height: 1.4;
+    background-color: #eef0fa;
+    font-family: "opensans"
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+    max-width: 100%;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: normal;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
 }
 
 
@@ -1592,13 +1593,16 @@ footer{
     float: right;
 }
 
+
+
+
 /* ==========================================================================
    Main Layout - READING AREA
    ========================================================================== */
 .reading-area{
     overflow:hidden;
 }
-.reading-area .reading-area-title{
+.reading-area-title{
     height: 164px;
     background: url("img/bg-lasitava.jpg");
     box-sizing: border-box;
@@ -1612,7 +1616,7 @@ footer{
 
 
 /* Category block */
-.reading-area .cat-block{
+.cat-block{
     width: 266px;
     background: url("img/bg-community-bottom.png") bottom no-repeat;
     padding-bottom: 10px;
@@ -1667,6 +1671,20 @@ footer{
                     top: -4px;
                     left: 5px;
                 }
+            .cat-block .sub-area{
+    padding: 25px 15px;
+}
+            .cat-block .add-center{
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 8px;
+}
+            .cat-block .txt-el{
+    color: #604f3f;
+    font-size: 14px;
+    line-height: 18px;
+}
         .cat-block .search{
             background-color: #eaebeb;
             padding: 16px 14px;
@@ -1690,7 +1708,7 @@ footer{
         padding: 19px 29px 14px;
         background-color: #98806b;
     }
-        .sub-cat-block .subcat{
+        .sub-cat-block .subcat, .button-small{
             font-family: "ptsans";
             font-size: 0.844em;
             color: #e0d0b1;
@@ -1709,7 +1727,7 @@ footer{
 
 
 /* Article filter */
-.reading-area .filter-articles{
+.filter-articles{
     background-color: #faf5f1;
     border: 1px solid #d4d6df;
     border-top: none;
@@ -2032,8 +2050,8 @@ footer{
 
 
 /* Articles list */
-.reading-area .articles-list{
-
+.articles-list{
+    min-height: 1656px;
 }
     .articles-list .article{
         border: 1px solid #e0e1e7;
@@ -2107,6 +2125,28 @@ footer{
             .articles-list .intro:after{
                 content: ' [...]';
             }
+            .articles-list .address{
+    font-size: 14px;
+    text-align: center;
+}
+            .articles-list h5{
+    color: #fc921b;
+    text-align: center;
+    font: 11px/1.4 'ptsans';
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    margin: 14px 0 -4px;
+}
+            .articles-list .profile-tags{
+    padding: 0;
+    margin: 5px 0 4px;
+    line-height: 19px;
+}
+            .articles-list .button-small{
+    background-color: #f5b326;
+    color: #fff;
+    margin-top: 12px;
+}
         .articles-list .misc{
             border-top: 1px solid #ebebeb;
             background-color: #f6f6f6;
@@ -2147,7 +2187,7 @@ footer{
 
 
 /* Banners */
-.reading-area .banner-area{
+.banner-area{
     float: right;
     width: 266px;
     margin-bottom: 30px;
@@ -2280,10 +2320,12 @@ footer{
         .blog-profile .profile-tags{
             padding: 0;
             margin: 6px 20px 20px;
-            line-height: 1.15;
+            line-height: 19px;
         }
             .profile-tags li{
-                font: 11px/12px 'ptsans';
+                font-family: "ptsans";
+                font-size: 11px;
+                line-height: 12px !important;
                 letter-spacing: .1em;
                 color: #fefefe;
                 background-color: #bead93;
@@ -2291,7 +2333,8 @@ footer{
                 padding: 1px 11px 0;
                 display: inline-block;
                 border-radius: 4px;
-                margin-right: 3px;
+                margin-right: 2px;
+                vertical-align: top;
             }
             .profile-tags .ac{
                 background-color: #5c4a3b;
@@ -2815,6 +2858,26 @@ footer{
 }
 
 
+
+
+
+
+
+
+
+/* Centers, Schools */
+.centers-schools{}
+.centers-schools .reading-area-title {
+    background: url(img/bg-centri.jpg);
+}
+.centers-schools .articles-list .article{
+    height: 438px;
+    text-align: center;
+}
+.centers-schools .articles-list .data{
+    height: 258px;
+    padding-bottom: 0;
+}
 
 
 
