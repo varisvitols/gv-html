@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="assets/css/normalize.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <script src="assets/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+</head>
+<body>
+    <!--[if lt IE 9]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <header>
+        <div class="user-area">
+            <div class="wrapper">
+                <div class="m-online" id="m-online">
+                    <a class="button-down  default" href="javascript:;" title=""><div class="arrow"></div></a>
+                    <img class="current-profile-image" src="assets/images/img-current-profile.jpg" />
+                    <div class="current-profile-title">Hariprem Swami</div>
+                    <img class="namaste" src="assets/css/img/txt-namaste.png" />
+                    <a class="new-messages" href="javascript:;" title=""><div class="num-messages">7</div></a>
+                    <div class="drop-down">
+                        <div class="dd-head">
+                            <div class="dd-title">Pro Profils</div>
+                            <a class="button-down  dd" href="javascript:;" title=""><div class="arrow"></div></a>
+                        </div>
+                        <div class="dd-content">
+                            <div class="dd-current-profile">
+                                <img class="dd-cp-img" src="assets/images/img-current-profile-large.jpg" alt="" />
+                                <div class="dd-cp-title">Hariprem Swami</div>
+                                <a class="dd-cp-edit" href="javascript:;" title="">Labot</a>
+                                <div class="dd-cp-pro">PRO</div>
+                            </div>
+                            <a class="dd-other-profile" href="javascript:;" title="">
+                                <img class="dd-op-img" src="assets/images/img-current-profile2.jpg" alt="" />
+                                <div class="dd-op-title">Agni Tantra</div>
+                                <div class="dd-op-pro">PRO</div>
+                            </a>
+                            <a class="dd-other-profile" href="javascript:;" title="">
+                                <img class="dd-op-img" src="assets/images/img-current-profile3.jpg" alt="" />
+                                <div class="dd-op-title">Matthias Lieb</div>
+                            </a>
+                            <a class="login-fb" href="javascript:;" title="">Pieteikties ar Facebook</a>
+                            <a class="link-logout" href="javascript:;" title="">Iziet</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="m-offline" id="m-offline" style="display: none;">
+                    <a class="button-down  default" href="javascript:;" title=""><div class="join">Pievienojies</div><div class="arrow"></div></a>
+                    <div class="drop-down">
+                        <div class="dd-head">
+                            <a class="button-down  dd" href="javascript:;" title=""><div class="join">Pievienojies</div><div class="arrow"></div></a>
+                        </div>
+                        <div class="dd-content">
+                            <div class="member-login">
+                                <form name="member_login" id="member_login" action="" method="post">
+                                    <div class="ico-input"><div class="ico-user-img"></div></div>
+                                    <input name="user" type="text" placeholder="Lietotājs vai epasts" />
+                                    <div class="ico-input"><div class="ico-pass-img"></div></div>
+                                    <input name="password" type="password" placeholder="Parole" />
+                                    <a class="remind-pass" href="javascript:;" title="">Atgādināt manu paroli</a>
+                                    <div class="login-buttons">
+                                        <input type="submit" value="Ienākt" />
+                                        <a class="link-register" href="javascript:;" title="">Reģistrēties</a>
+                                    </div>
+                                    <a class="login-fb" href="javascript:;" title="">Ar Facebook profilu</a>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-area">
+            <div class="wrapper  table">
+                <div class="logo"><img src="assets/css/img/gv-logo.png" alt="Gara Vasara" /></div>
+                <nav class="nav-main">
+                    <a class="main-item  ac" href="javascript:;" title="">Sākums</a>
+                    <a class="main-item" href="javascript:;" title="">Lasītava</a>
+                    <a class="main-item" href="javascript:;" title="">Pasākumi</a>
+                    <a class="main-item" href="javascript:;" title="">Centri & skolas</a>
+                </nav>
+                <nav class="nav-lang">
+                    <a class="lang-item" href="javascript:;" title="">En</a>
+                    <a class="lang-item" href="javascript:;" title="">Ru</a>
+                    <a class="lang-item  ac" href="javascript:;" title="">Lv</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <div class="wrapper">
+        <div class="events-area">
+            <h1 class="events-area-title">Pasākumi</h1>
+            
+            <div class="upc-evts">
+                <div class="header">
+                    <p class="membership-notice">Šeit Tu vari iegādāties abonomentu uz <span class="mmb mb-s-1"></span><span class="mmb mb-s-2"></span><span class="mmb mb-s-3"></span> pasākumiem</p>
+                    <a href="javascript:;" class="button-two purchase-membership">Iegādāties DRAUGU KARTI</a>
+                </div>
+                <div class="data">
+                    
+                    <div class="row  odd">
+                        <div class="date">
+                            <div class="day-m">03</div>
+                            <div class="month">Jūn</div>
+                            <div class="day-w  w-day">Cet</div>
+                        </div>
+                        
+                        <a class="event member1 member2" href="javascript:;" title="">
+                            <div class="ev-img"><img src="assets/images/img-event-small1.jpg" alt="" /></div>
+                            <div class="time">13:40</div>
+                            <div class="mb">
+                                <div class="mm mb-s-1"></div><div class="mm mb-s-2"></div><div class="mm mb-s-3"></div>
+                            </div>
+                            <div class="title">Sūfiju zikra vakars ar Zareju Sūfiju zikra vakars ar Zareju</div>
+                        </a>
+                        <a class="event member3" href="javascript:;" title="">
+                            <div class="ev-img"><img src="assets/images/img-event-small2.jpg" alt="" /></div>
+                            <div class="time">13:40</div>
+                            <div class="mb">
+                                <div class="mm mb-s-1"></div><div class="mm mb-s-2"></div><div class="mm mb-s-3"></div>
+                            </div>
+                            <div class="title">Sūfiju zikra vakars ar Zareju</div>
+                        </a>
+                        <a class="event" href="javascript:;" title="">
+                            <div class="ev-img"><img src="assets/images/img-event-small3.jpg" alt="" /></div>
+                            <div class="time">13:40</div>
+                            <div class="mb">
+                                <div class="mm mb-s-1"></div><div class="mm mb-s-2"></div><div class="mm mb-s-3"></div>
+                            </div>
+                            <div class="title">Sūfiju zikra vakars ar Zareju</div>
+                        </a>
+                        <a class="event member1" href="javascript:;" title="">
+                            <div class="ev-img"><img src="assets/images/img-event-small4.jpg" alt="" /></div>
+                            <div class="time">13:40</div>
+                            <div class="mb">
+                                <div class="mm mb-s-1"></div><div class="mm mb-s-2"></div><div class="mm mb-s-3"></div>
+                            </div>
+                            <div class="title">Sūfiju zikra vakars ar Zareju Sūfiju zikra vakars ar Zareju Sūfiju zikra vakars ar Zareju</div>
+                        </a>
+                        <a class="event member1 member2" href="javascript:;" title="">
+                            <div class="ev-img"><img src="assets/images/img-event-small5.jpg" alt="" /></div>
+                            <div class="time">13:40</div>
+                            <div class="mb">
+                                <div class="mm mb-s-1"></div><div class="mm mb-s-2"></div><div class="mm mb-s-3"></div>
+                            </div>
+                            <div class="title">Sūfiju zikra vakars ar Zareju</div>
+                        </a>
+                    </div>
+                    
+                    <div class="row  even">
+                        <div class="date">
+                            <div class="day-m">04</div>
+                            <div class="month">Jūn</div>
+                            <div class="day-w  w-day">Pie</div>
+                        </div>
+
+                        <a class="event member1 member2" href="javascript:;" title="">
+                            <div class="ev-img"><img src="assets/images/img-event-small1.jpg" alt="" /></div>
+                            <div class="time">13:40</div>
+                            <div class="mb">
+                                <div class="mm mb-s-1"></div><div class="mm mb-s-2"></div><div class="mm mb-s-3"></div>
+                            </div>
+                            <div class="title">Sūfiju zikra vakars ar Zareju Sūfiju zikra vakars ar Zareju</div>
+                        </a>
+                        <a class="event member3" href="javascript:;" title="">
+                            <div class="ev-img"><img src="assets/images/img-event-small2.jpg" alt="" /></div>
+                            <div class="time">13:40</div>
+                            <div class="mb">
+                                <div class="mm mb-s-1"></div><div class="mm mb-s-2"></div><div class="mm mb-s-3"></div>
+                            </div>
+                            <div class="title">Sūfiju zikra vakars ar Zareju</div>
+                        </a>
+                        <a class="event" href="javascript:;" title="">
+                            <div class="ev-img"><img src="assets/images/img-event-small3.jpg" alt="" /></div>
+                            <div class="time">13:40</div>
+                            <div class="mb">
+                                <div class="mm mb-s-1"></div><div class="mm mb-s-2"></div><div class="mm mb-s-3"></div>
+                            </div>
+                            <div class="title">Sūfiju zikra vakars ar Zareju</div>
+                        </a>
+                        <a class="event member2" href="javascript:;" title="">
+                            <div class="ev-img"><img src="assets/images/img-event-small4.jpg" alt="" /></div>
+                            <div class="time">13:40</div>
+                            <div class="mb">
+                                <div class="mm mb-s-1"></div><div class="mm mb-s-2"></div><div class="mm mb-s-3"></div>
+                            </div>
+                            <div class="title">Sūfiju zikra vakars ar Zareju Sūfiju zikra vakars ar Zareju Sūfiju zikra vakars ar Zareju</div>
+                        </a>
+                        <a class="event member1 member2" href="javascript:;" title="">
+                            <div class="ev-img"><img src="assets/images/img-event-small5.jpg" alt="" /></div>
+                            <div class="time">13:40</div>
+                            <div class="mb">
+                                <div class="mm mb-s-1"></div><div class="mm mb-s-2"></div><div class="mm mb-s-3"></div>
+                            </div>
+                            <div class="title">Sūfiju zikra vakars ar Zareju</div>
+                        </a>
+                        <a class="event member1 member2" href="javascript:;" title="">
+                            <div class="ev-img"><img src="assets/images/img-event-small6.jpg" alt="" /></div>
+                            <div class="time">13:40</div>
+                            <div class="mb">
+                                <div class="mm mb-s-1"></div><div class="mm mb-s-2"></div><div class="mm mb-s-3"></div>
+                            </div>
+                            <div class="title">Sūfiju zikra vakars ar Zareju</div>
+                        </a>
+                        <a class="event" href="javascript:;" title="">
+                            <div class="ev-img"><img src="assets/images/img-event-small1.jpg" alt="" /></div>
+                            <div class="time">13:40</div>
+                            <div class="mb">
+                                <div class="mm mb-s-1"></div><div class="mm mb-s-2"></div><div class="mm mb-s-3"></div>
+                            </div>
+                            <div class="title">Sūfiju zikra vakars ar Zareju</div>
+                        </a>
+                        <a class="event member1 member2" href="javascript:;" title="">
+                            <div class="ev-img"><img src="assets/images/img-event-small2.jpg" alt="" /></div>
+                            <div class="time">13:40</div>
+                            <div class="mb">
+                                <div class="mm mb-s-1"></div><div class="mm mb-s-2"></div><div class="mm mb-s-3"></div>
+                            </div>
+                            <div class="title">Sūfiju zikra vakars ar Zareju</div>
+                        </a>
+                        <a class="event member1 member2" href="javascript:;" title="">
+                            <div class="ev-img"><img src="assets/images/img-event-small3.jpg" alt="" /></div>
+                            <div class="time">13:40</div>
+                            <div class="mb">
+                                <div class="mm mb-s-1"></div><div class="mm mb-s-2"></div><div class="mm mb-s-3"></div>
+                            </div>
+                            <div class="title">Sūfiju zikra vakars ar Zareju</div>
+                        </a>
+                    </div>
+                    
+                    <div class="row  odd">
+                        <div class="date">
+                            <div class="day-m">05</div>
+                            <div class="month">Jūn</div>
+                            <div class="day-w  w-end">Ses</div>
+                        </div>
+                        
+                        <a class="event member1 member2" href="javascript:;" title="">
+                            <div class="ev-img"><img src="assets/images/img-event-small1.jpg" alt="" /></div>
+                            <div class="time">13:40</div>
+                            <div class="mb">
+                                <div class="mm mb-s-1"></div><div class="mm mb-s-2"></div><div class="mm mb-s-3"></div>
+                            </div>
+                            <div class="title">Sūfiju zikra vakars ar Zareju Sūfiju zikra vakars ar Zareju</div>
+                        </a>
+                        <a class="event member3" href="javascript:;" title="">
+                            <div class="ev-img"><img src="assets/images/img-event-small2.jpg" alt="" /></div>
+                            <div class="time">13:40</div>
+                            <div class="mb">
+                                <div class="mm mb-s-1"></div><div class="mm mb-s-2"></div><div class="mm mb-s-3"></div>
+                            </div>
+                            <div class="title">Sūfiju zikra vakars ar Zareju</div>
+                        </a>
+                        <a class="event" href="javascript:;" title="">
+                            <div class="ev-img"><img src="assets/images/img-event-small3.jpg" alt="" /></div>
+                            <div class="time">13:40</div>
+                            <div class="mb">
+                                <div class="mm mb-s-1"></div><div class="mm mb-s-2"></div><div class="mm mb-s-3"></div>
+                            </div>
+                            <div class="title">Sūfiju zikra vakars ar Zareju</div>
+                        </a>
+                        <a class="event member1" href="javascript:;" title="">
+                            <div class="ev-img"><img src="assets/images/img-event-small4.jpg" alt="" /></div>
+                            <div class="time">13:40</div>
+                            <div class="mb">
+                                <div class="mm mb-s-1"></div><div class="mm mb-s-2"></div><div class="mm mb-s-3"></div>
+                            </div>
+                            <div class="title">Sūfiju zikra vakars ar Zareju Sūfiju zikra vakars ar Zareju Sūfiju zikra vakars ar Zareju</div>
+                        </a>
+                        <a class="event member1 member2" href="javascript:;" title="">
+                            <div class="ev-img"><img src="assets/images/img-event-small5.jpg" alt="" /></div>
+                            <div class="time">13:40</div>
+                            <div class="mb">
+                                <div class="mm mb-s-1"></div><div class="mm mb-s-2"></div><div class="mm mb-s-3"></div>
+                            </div>
+                            <div class="title">Sūfiju zikra vakars ar Zareju</div>
+                        </a>
+                        <a class="event member1 member2" href="javascript:;" title="">
+                            <div class="ev-img"><img src="assets/images/img-event-small6.jpg" alt="" /></div>
+                            <div class="time">13:40</div>
+                            <div class="mb">
+                                <div class="mm mb-s-1"></div><div class="mm mb-s-2"></div><div class="mm mb-s-3"></div>
+                            </div>
+                            <div class="title">Sūfiju zikra vakars ar Zareju</div>
+                        </a>
+                        <a class="event" href="javascript:;" title="">
+                            <div class="ev-img"><img src="assets/images/img-event-small1.jpg" alt="" /></div>
+                            <div class="time">13:40</div>
+                            <div class="mb">
+                                <div class="mm mb-s-1"></div><div class="mm mb-s-2"></div><div class="mm mb-s-3"></div>
+                            </div>
+                            <div class="title">Sūfiju zikra vakars ar Zareju</div>
+                        </a>
+                        <a class="event member1 member2" href="javascript:;" title="">
+                            <div class="ev-img"><img src="assets/images/img-event-small2.jpg" alt="" /></div>
+                            <div class="time">13:40</div>
+                            <div class="mb">
+                                <div class="mm mb-s-1"></div><div class="mm mb-s-2"></div><div class="mm mb-s-3"></div>
+                            </div>
+                            <div class="title">Sūfiju zikra vakars ar Zareju</div>
+                        </a>
+                        <a class="event member1 member2" href="javascript:;" title="">
+                            <div class="ev-img"><img src="assets/images/img-event-small3.jpg" alt="" /></div>
+                            <div class="time">13:40</div>
+                            <div class="mb">
+                                <div class="mm mb-s-1"></div><div class="mm mb-s-2"></div><div class="mm mb-s-3"></div>
+                            </div>
+                            <div class="title">Sūfiju zikra vakars ar Zareju</div>
+                        </a>
+                        <a class="event member1 member2" href="javascript:;" title="">
+                            <div class="ev-img"><img src="assets/images/img-event-small5.jpg" alt="" /></div>
+                            <div class="time">13:40</div>
+                            <div class="mb">
+                                <div class="mm mb-s-1"></div><div class="mm mb-s-2"></div><div class="mm mb-s-3"></div>
+                            </div>
+                            <div class="title">Sūfiju zikra vakars ar Zareju</div>
+                        </a>
+                        <a class="event member1 member2" href="javascript:;" title="">
+                            <div class="ev-img"></div>
+                            <div class="time">13:40</div>
+                            <div class="mb">
+                                <div class="mm mb-s-1"></div><div class="mm mb-s-2"></div><div class="mm mb-s-3"></div>
+                            </div>
+                            <div class="title">Sūfiju zikra vakars ar Zareju</div>
+                        </a>
+                        <a class="event member2" href="javascript:;" title="">
+                            <div class="ev-img"><img src="assets/images/img-event-small6.jpg" alt="" /></div>
+                            <div class="time">13:40</div>
+                            <div class="mb">
+                                <div class="mm mb-s-1"></div><div class="mm mb-s-2"></div><div class="mm mb-s-3"></div>
+                            </div>
+                            <div class="title">Sūfiju zikra vakars ar Zareju Sūfiju zikra vakars ar Zareju</div>
+                        </a>
+                    </div>
+    
+                    <div class="row  even">
+                        <div class="date">
+                            <div class="day-m">06</div>
+                            <div class="month">Jūn</div>
+                            <div class="day-w  w-end">Sv</div>
+                        </div>
+                        
+                        <a class="event member1 member2" href="javascript:;" title="">
+                            <div class="ev-img"><img src="assets/images/img-event-small1.jpg" alt="" /></div>
+                            <div class="time">13:40</div>
+                            <div class="mb">
+                                <div class="mm mb-s-1"></div><div class="mm mb-s-2"></div><div class="mm mb-s-3"></div>
+                            </div>
+                            <div class="title">Sūfiju zikra vakars ar Zareju Sūfiju zikra vakars ar Zareju</div>
+                        </a>
+                        <a class="event member3" href="javascript:;" title="">
+                            <div class="ev-img"><img src="assets/images/img-event-small2.jpg" alt="" /></div>
+                            <div class="time">13:40</div>
+                            <div class="mb">
+                                <div class="mm mb-s-1"></div><div class="mm mb-s-2"></div><div class="mm mb-s-3"></div>
+                            </div>
+                            <div class="title">Sūfiju zikra vakars ar Zareju</div>
+                        </a>
+                        <a class="event" href="javascript:;" title="">
+                            <div class="ev-img"><img src="assets/images/img-event-small3.jpg" alt="" /></div>
+                            <div class="time">13:40</div>
+                            <div class="mb">
+                                <div class="mm mb-s-1"></div><div class="mm mb-s-2"></div><div class="mm mb-s-3"></div>
+                            </div>
+                            <div class="title">Sūfiju zikra vakars ar Zareju</div>
+                        </a>
+                        <a class="event member3" href="javascript:;" title="">
+                            <div class="ev-img"><img src="assets/images/img-event-small4.jpg" alt="" /></div>
+                            <div class="time">13:40</div>
+                            <div class="mb">
+                                <div class="mm mb-s-1"></div><div class="mm mb-s-2"></div><div class="mm mb-s-3"></div>
+                            </div>
+                            <div class="title">Sūfiju zikra vakars ar Zareju Sūfiju zikra vakars ar Zareju Sūfiju zikra vakars ar Zareju</div>
+                        </a>
+                        <a class="event member1 member2" href="javascript:;" title="">
+                            <div class="ev-img"><img src="assets/images/img-event-small5.jpg" alt="" /></div>
+                            <div class="time">13:40</div>
+                            <div class="mb">
+                                <div class="mm mb-s-1"></div><div class="mm mb-s-2"></div><div class="mm mb-s-3"></div>
+                            </div>
+                            <div class="title">Sūfiju zikra vakars ar Zareju</div>
+                        </a>
+                        <a class="event member1 member2" href="javascript:;" title="">
+                            <div class="ev-img"><img src="assets/images/img-event-small6.jpg" alt="" /></div>
+                            <div class="time">13:40</div>
+                            <div class="mb">
+                                <div class="mm mb-s-1"></div><div class="mm mb-s-2"></div><div class="mm mb-s-3"></div>
+                            </div>
+                            <div class="title">Sūfiju zikra vakars ar Zareju</div>
+                        </a>
+                        <a class="event" href="javascript:;" title="">
+                            <div class="ev-img"><img src="assets/images/img-event-small1.jpg" alt="" /></div>
+                            <div class="time">13:40</div>
+                            <div class="mb">
+                                <div class="mm mb-s-1"></div><div class="mm mb-s-2"></div><div class="mm mb-s-3"></div>
+                            </div>
+                            <div class="title">Sūfiju zikra vakars ar Zareju</div>
+                        </a>
+                        <a class="event member1 member2" href="javascript:;" title="">
+                            <div class="ev-img"><img src="assets/images/img-event-small2.jpg" alt="" /></div>
+                            <div class="time">13:40</div>
+                            <div class="mb">
+                                <div class="mm mb-s-1"></div><div class="mm mb-s-2"></div><div class="mm mb-s-3"></div>
+                            </div>
+                            <div class="title">Sūfiju zikra vakars ar Zareju</div>
+                        </a>
+                        <a class="event member1 member2" href="javascript:;" title="">
+                            <div class="ev-img"><img src="assets/images/img-event-small3.jpg" alt="" /></div>
+                            <div class="time">13:40</div>
+                            <div class="mb">
+                                <div class="mm mb-s-1"></div><div class="mm mb-s-2"></div><div class="mm mb-s-3"></div>
+                            </div>
+                            <div class="title">Sūfiju zikra vakars ar Zareju</div>
+                        </a>
+                        <a class="event member1 member2" href="javascript:;" title="">
+                            <div class="ev-img"><img src="assets/images/img-event-small5.jpg" alt="" /></div>
+                            <div class="time">13:40</div>
+                            <div class="mb">
+                                <div class="mm mb-s-1"></div><div class="mm mb-s-2"></div><div class="mm mb-s-3"></div>
+                            </div>
+                            <div class="title">Sūfiju zikra vakars ar Zareju</div>
+                        </a>
+                        <a class="event member1 member2" href="javascript:;" title="">
+                            <div class="ev-img"></div>
+                            <div class="time">13:40</div>
+                            <div class="mb">
+                                <div class="mm mb-s-1"></div><div class="mm mb-s-2"></div><div class="mm mb-s-3"></div>
+                            </div>
+                            <div class="title">Sūfiju zikra vakars ar Zareju</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <aside class="banner-area">
+                <div class="banner"><img src="assets/images/banner-large.jpg" alt="" /></div>
+                <div class="banner"><img src="assets/images/banner-small1.jpg" alt="" /></div>
+                <div class="banner"><img src="assets/images/banner-small2.jpg" alt="" /></div>
+                <div class="facebook-plugin">facebook plugin goes here</div>
+            </aside>
+            
+            <div class="suggested-articles">
+                <h2>Tev varētu patikt!</h2>
+                <div class="latest-article">
+                    <a class="img" href="javascript:;" title=""><img src="assets/images/img-article-small.jpg" alt="" /></a>
+                    <h4><a class="title" href="javascript:;" title="">Šamanisma atdzimšana Eiropā</a></h4>
+                    <p class="intro">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis...
+                    </p>
+                </div>
+                <div class="latest-article">
+                    <a class="img" href="javascript:;" title=""><img src="assets/images/img-article-small.jpg" alt="" /></a>
+                    <h4><a class="title" href="javascript:;" title="">Apzinātības prakses senajās civilizācijās</a></h4>
+                    <p class="intro">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis...
+                    </p>
+                </div>
+                <div class="latest-article">
+                    <a class="img" href="javascript:;" title=""><img src="assets/images/img-article-small.jpg" alt="" /></a>
+                    <h4><a class="title" href="javascript:;" title="">15 ieteikumi kā beigt cepties</a></h4>
+                    <p class="intro">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis...
+                    </p>
+                </div>
+                <div class="latest-article">
+                    <a class="img" href="javascript:;" title=""><img src="assets/images/img-article-small.jpg" alt="" /></a>
+                    <h4><a class="title" href="javascript:;" title="">Vēlies izmainīt pasauli? Sāc ar sevi!</a></h4>
+                    <p class="intro">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis...
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <div class="slogan">Vieta, kur mēs satiekamies - gan tie, kas meklē,<br /> gan tie, kas jau atraduši un vēlas dalīties.</div>
+            <div class="footer-links">
+                <h4>Kontaktinformācija</h4>
+                <a class="ftlink" href="mailto:info@garavasara.com" title="">info@garavasara.com</a>
+            </div>
+            <div class="footer-links">
+                <h4>Pro profili</h4>
+                <a class="ftlink" href="javascript:;" title="">Organizatoriem</a>
+                <a class="ftlink" href="javascript:;" title="">Izveidot PRO profilu</a>
+                <a class="ftlink" href="javascript:;" title="">Palīdzība PRO profiliem</a>
+                <a class="ftlink" href="javascript:;" title="">Noteikumi PRO profiliem</a>
+            </div>
+            <div class="footer-links">
+                <h4>Portāls</h4>
+                <a class="ftlink" href="javascript:;" title="">Par portālu</a>
+                <a class="ftlink" href="javascript:;" title="">BUJ</a>
+                <a class="ftlink" href="javascript:;" title="">Reģistrācija</a>
+                <a class="ftlink" href="javascript:;" title="">Kopējie noteikumi</a>
+                <a class="ftlink" href="javascript:;" title="">Palīdzība lietotājiem</a>
+            </div>
+        </footer>
+    </div>
+    
+    <script>window.jQuery || document.write('<script src="assets/js/jquery-1.11.0.min.js"><\/script>')</script>
+
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>
