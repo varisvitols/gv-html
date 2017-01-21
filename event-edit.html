@@ -111,97 +111,226 @@
             </div>
 
             <div class="blogmain">
-                <div class="event-article">
-                    <div class="event-header">
-                        <div class="blog-featimg"><img src="assets/images/img-blog-featimg.png" alt="" /></div>
-                        <div class="event-header-data">
-                            <div class="heading">
-                                <div class="date-block"><div class="day">15</div><div class="month">jūn</div></div>
-                                <h1><span class="type">Nodarbība:</span> Lorem ipsum dolor sit amet, con sectetur adipisicing elsicing elit, sed do eiusmod tempor Fincididunt ut labore et dolore magna aliq</h1>
+                <!-- Sākot no šīs vietas ir atšķirības no Event skata -->
+                <form id="edit_event" class="" action="javascript:;" method="post" enctype="multipart/form-data">
+                    <div class="event-article event-creation">
+                        <div class="event-header event-header-compact">
+                            <div class="blog-featimg">
+                                <div class="add-image-placeholder">
+                                    <a href="javascript:;" class="add-event-image link" id="add-event-image" title=""><span class="text">Pievienot bildi</span> <span class="asterisk">*</span></a>
+                                </div>
+                                <div class="add-image-img">
+                                    <a class="remove-image link" href="javascript:;" title="">Noņemt bildi</a>
+                                    <input type="file" name="event_image" value="" class="input-image">
+                                    <input type="hidden" name="event_image_type" value="">
+                                </div>
+                                <a href="javascript:;" class="change-image-type link" id="change-image-type" data-large="Pievient lielo banera bildi" data-small="Pievienot mazo bildi" title="">Pievient lielo banera bildi</a>
                             </div>
-
-                            <div class="details">
-                                <div class="item">
-                                    <div class="label">Sākuma datums:</div><div class="data">2.jūnijs, 2015.</div>
+                            <div class="event-header-data">
+                                <div class="choose-event-type">
+                                    <div class="profile-img">
+                                        <img class="author-img" src="assets/images/img-blog-profilesmall.png" alt="">
+                                    </div>
+                                    <p class="intro-text">
+                                        Laipni lūgti pasākuma izveidosanas lapā! Vēl viens teikms, kas ir nokopēts no kaut kurienes! Lūdzu izvēlēties pasākuma kategoriju:
+                                    </p>
+                                    <div class="form-input-radio">
+                                        <input type="radio" name="event_member" value="type_1" id="event_member_1">
+                                        <label for="event_member_1">Bezmaksas pasākums vai pasākums par ziedojumiem</label>
+                                        <div class="event-type-badges">
+                                            <div class="mm mb-s-1"></div><div class="mm mb-s-2"></div><div class="mm mb-s-3"></div>
+                                        </div>
+                                    </div>
+                                    <div class="form-input-radio">
+                                        <input type="radio" name="event_member" value="type_2" id="event_member_2">
+                                        <label for="event_member_2">Pasākums ar 10 % atlaidi GARA VASARA draugiem!</label>
+                                        <div class="event-type-badges member1">
+                                            <div class="mm mb-s-1"></div><div class="mm mb-s-2"></div><div class="mm mb-s-3"></div>
+                                        </div>
+                                    </div>
+                                    <div class="form-input-radio">
+                                        <input type="radio" name="event_member" value="type_3" id="event_member_3">
+                                        <label for="event_member_3">Pasākums ar 15 - 20 % atlaidi GARA VASARA draugiem (mēs palīdzēsim izplatīt šo pasākumu)</label>
+                                        <div class="event-type-badges member1 member2">
+                                            <div class="mm mb-s-1"></div><div class="mm mb-s-2"></div><div class="mm mb-s-3"></div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="item">
-                                    <div class="label">Beigu datums:</div><div class="data">15.jūnijs, 2015.</div>
-                                </div>
-                                <div class="item">
-                                    <div class="label">Sākuma laiks:</div><div class="data">11:30</div>
-                                </div>
-                                <div class="item">
-                                    <div class="label">Beigu laiks:</div><div class="data">15:00</div>
-                                </div>
-                                <div class="item">
-                                    <div class="label">Vieta:</div><div class="data">Lampa Room, Rīga, Cēsu iela 8</div>
-                                </div>
-                                <div class="item">
-                                    <div class="label">Kontakti:</div><div class="data">info@centrs.lv, 26354871</div>
-                                </div>
-                            </div>
-                            <div class="mb member1 member2">
-                                <div class="mm mb-1"></div><div class="mm mb-2"></div><div class="mm mb-3"></div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="event-description">
-                        <p class="intro">
-                            Viens no tematiem, ko ar Ekhartu Tolle apspriedām mūsu sarunā bija, cik vieglai būtu jābūt meditācijai, ka nebūtu vajadzīga tiekšanās vai koncentrēšanās. Daži no jums varētu būt pārsteigti, pirmo reizi to dzirdot. Es biju pārsteigts. Kad pirmo reizi sāku meditāciju, man vairākkārt bija teikts, ka tā ir nopietna garīgā disciplīna un daudzu gadu prakse.
-                        </p>
-
-                        <p>Tas ir prāts savā dabiskajā stāvoklī, ko neietekmē bailes un vēlmes, un domas, kas tās rada. Kad viss ir labi mūsu pasaulē, mēs arī iekšēji jūtamies labi; mēs jūtamies viegli. Vai drīzāk, tā tam vajadzētu būt. Tomēr pat tad, ja tiek apmierinātas visas mūsu fiziskās vajadzības, un nepastāv briesmas vai apdraudējums, mēs reti jūtamies viegli. Biežāk tieši pretēji. Ja mums nav ko darīt, lielākai daļai sāk kļūt garlaicīgi.  Tas ir prāts savā dabiskajā stāvoklī, ko neietekmē bailes un vēlmes, un domas, kas tās rada. Kad viss ir labi mūsu pasaulē, mēs arī iekšēji jūtamies labi; mēs jūtamies viegli. Vai drīzāk, tā tam vajadzētu būt. Tomēr pat tad, ja tiek apmierinātas visas mūsu fiziskās vajadzības, un nepastāv briesmas vai apdraudējums, mēs reti jūtamies viegli. Biežāk tieši pretēji. Ja mums nav ko darīt, lielākai daļai sāk kļūt garlaicīgi. </p>
-                        <p>Tas ir prāts savā dabiskajā stāvoklī, ko neietekmē bailes un vēlmes, un domas, kas tās rada. Kad viss ir labi mūsu pasaulē, mēs arī iekšēji jūtamies labi; mēs jūtamies viegli. Vai drīzāk, tā tam vajadzētu būt. Tomēr pat tad, ja tiek apmierinātas visas mūsu fiziskās vajadzības, un nepastāv briesmas vai apdraudējums, mēs reti jūtamies viegli. Biežāk tieši pretēji. Ja mums nav ko darīt, lielākai daļai sāk kļūt garlaicīgi. </p>
-                        <p>Vai drīzāk, tā tam vajadzētu būt. Tomēr pat tad, ja tiek apmierinātas visas mūsu fiziskās vajadzības, un nepastāv briesmas vai apdraudējums, mēs reti jūtamies viegli. Biežāk tieši pretēji. Ja mums nav ko darīt, lielākai daļai sāk kļūt garlaicīgi. </p>
-                    </div>
-
-                    <ul class="event-gallery">
-                        <li><a href="javascript:;" alt=""><img src="assets/images/img-event-gal-thumb1.jpg" alt="" /></a></li>
-                        <li><a href="javascript:;" alt=""><img src="assets/images/img-event-gal-thumb2.jpg" alt="" /></a></li>
-                        <li><a href="javascript:;" alt=""><img src="assets/images/img-event-gal-thumb2-04.jpg" alt="" /></a></li>
-                        <li><a href="javascript:;" alt=""><img src="assets/images/img-event-gal-thumb4.jpg" alt="" /></a></li>
-                        <li><a href="javascript:;" alt=""><img src="assets/images/img-event-gal-thumb5.jpg" alt="" /></a></li>
-                    </ul>
-
-                    <div class="right">
-                        <a class="button-large  iwillgo" href="javascript:;">Plānoju apmeklēt</a>
-                    </div>
-
-                    <div class="event-star section-exp collapsed">
-                        <div class="inner" data-collapsedheight="150">
-                            <div class="evt-star-image">
-                                <img src="assets/images/img-event-host1.jpg" alt="" />
-                                <div class="img-subtitle">Pasniedzējs</div>
+                        <div class="event-details">
+                            <div class="form-input form-input-select">
+                                <select class="" name="event_type">
+                                    <option value="">Pasākuma veids</option>
+                                    <option value="1">Veids nr. 1</option>
+                                    <option value="2">Veids nr. 2</option>
+                                </select>
+                                <div class="my-own-select">
+                                    <div class="selected-item">Pasākuma veids</div>
+                                    <div class="select-options">
+                                        <div class="select-option selected" data-value="">Pasākuma veids</div>
+                                        <div class="select-option" data-value="1">Veids nr. 1</div>
+                                        <div class="select-option" data-value="2">Veids nr. 2</div>
+                                    </div>
+                                    <a href="javascript:;" class="select-arrow" title=""></a>
+                                    <span class="asterisk">*</span>
+                                </div>
                             </div>
 
-                            <h4 class="evt-star-name">Juris & Bhavani</h4>
-
-                            <p>Lorem ipsum dolor sit amet, con sectetur adipisicing elsicing elit, sed do eiusmod tempor Fincididunt ut labore et dolore magna aliqua is icing eliit, sed do eiusmod tempor tempolorem ipusim usimusim. Lis icing eliit, sed do eiusmod tempor tempolorem ipusim usimusim. Lis icing eliit, sed do eiusmod tempor tempolorem ipusim usimusim. Lis icing eliit, sed do eiusmod tempor tempolorem</p>
-                            <p>Lorem ipsum dolor sit amet, con sectetur adipisicing elsicing elit, sed do eiusmod tempor Fincididunt ut labore et dolore magna aliqua is icing eliit, sed do eiusmod tempor tempolorem ipusim usimusim. Lis icing eliit, sed do eiusmod tempor tempolorem ipusim usimusim. Lis icing eliit, sed do eiusmod tempor tempolorem ipusim usimusim. Lis icing eliit, sed do eiusmod tempor tempolorem</p>
-                            <p>Lorem ipsum dolor sit amet, con sectetur adipisicing elsicing elit, sed do eiusmod tempor Fincididunt ut labore et dolore magna aliqua is icing eliit, sed do eiusmod tempor tempolorem ipusim usimusim. Lis icing eliit, sed do eiusmod tempor tempolorem ipusim usimusim. Lis icing eliit, sed do eiusmod tempor tempolorem ipusim usimusim. Lis icing eliit, sed do eiusmod tempor tempolorem</p>
-                        </div>
-                        <a class="read-more" href="javascript:;" data-default="Lasīt visu" data-alt="Savērst" title="">Lasīt visu</a>
-                    </div>
-
-                    <div class="event-star section-exp collapsed">
-                        <div class="inner" data-collapsedheight="150">
-                            <div class="evt-star-image">
-                                <img src="assets/images/img-event-host2.jpg" alt="" />
-                                <div class="img-subtitle">Pasniedzējs</div>
+                            <div class="form-input title char-limit" max="60">
+                                <label for="event_title">Pasākuma nosaukums:<span class="asterisk">*</span></label>
+                                <textarea name="event_title" id="event_title" placeholder="Ievadiet nosaukumu"></textarea>
+                                <div class="char-counter">
+                                    <span class="num"></span>
+                                    <span class="unit">simboli</span>
+                                </div>
                             </div>
 
-                            <h4 class="evt-star-name">Hariprem Swami</h4>
+                            <div class="form-input">
+                                <label for="event_title">Pasākums notiks:<span class="asterisk">*</span></label>
+                                <input type="text" name="event_time" value="" />
+                            </div>
 
-                            <p>Lorem ipsum dolor sit amet, con sectetur adipisicing elsicing elit, sed do eiusmod tempor Fincididunt ut labore et dolore magna aliqua is icing eliit, sed do eiusmod tempor tempolorem ipusim usimusim. Lis icing eliit, sed do eiusmod tempor tempolorem ipusim usimusim. Lis icing eliit, sed do eiusmod tempor tempolorem ipusim usimusim. Lis icing eliit, sed do eiusmod tempor tempolorem</p>
-                            <p>Lorem ipsum dolor sit amet, con sectetur adipisicing elsicing elit, sed do eiusmod tempor Fincididunt ut labore et dolore magna aliqua is icing eliit, sed do eiusmod tempor tempolorem ipusim usimusim. Lis icing eliit, sed do eiusmod tempor tempolorem ipusim usimusim. Lis icing eliit, sed do eiusmod tempor tempolorem ipusim usimusim. Lis icing eliit, sed do eiusmod tempor tempolorem</p>
-                            <p>Lorem ipsum dolor sit amet, con sectetur adipisicing elsicing elit, sed do eiusmod tempor Fincididunt ut labore et dolore magna aliqua is icing eliit, sed do eiusmod tempor tempolorem ipusim usimusim. Lis icing eliit, sed do eiusmod tempor tempolorem ipusim usimusim. Lis icing eliit, sed do eiusmod tempor tempolorem ipusim usimusim. Lis icing eliit, sed do eiusmod tempor tempolorem</p>
-                            <p>Lorem ipsum dolor sit amet, con sectetur adipisicing elsicing elit, sed do eiusmod tempor Fincididunt ut labore et dolore magna aliqua is icing eliit, sed do eiusmod tempor tempolorem ipusim usimusim. Lis icing eliit, sed do eiusmod tempor tempolorem ipusim usimusim. Lis icing eliit, sed do eiusmod tempor tempolorem ipusim usimusim. Lis icing eliit, sed do eiusmod tempor tempolorem</p>
+                            <div class="form-input input-half pull-left">
+                                <label for="event_title">Vieta:<span class="asterisk">*</span></label>
+                                <input type="text" name="event_location" value="" placeholder="Ielas nosaukums, numurs, pilsēta" />
+                            </div>
+
+                            <div class="form-input input-half pull-right">
+                                <label for="event_title">Kontakti:<span class="asterisk">*</span></label>
+                                <input type="text" name="event_contacts" value="" placeholder="Ievadiet epastu, telefona nr." />
+                            </div>
+
+                            <div class="clearfix"></div>
+
+                            <div class="form-input intro char-limit" max="320">
+                                <label for="event_title">Ieveadteksts:<span class="asterisk">*</span></label>
+                                <textarea name="event_intro" id="event_intro" placeholder="Ievadiet ievadtekstu..."></textarea>
+                                <div class="char-counter">
+                                    <span class="num"></span>
+                                    <span class="unit">simboli</span>
+                                </div>
+                            </div>
+
+                            <div class="form-input description">
+                                <label for="event_title">Apraksts:<span class="asterisk">*</span></label>
+                                <textarea name="event_description" id="event_description" placeholder="Ievadiet pasākuma aprakstu..."></textarea>
+                            </div>
                         </div>
-                        <a class="read-more" href="javascript:;" data-default="Lasīt visu" data-alt="Savērst" title="">Lasīt visu</a>
-                    </div>
-                </div>
 
+                        <div class="form-input gallery">
+                            <label for="event_title">Pasākuma galerija:</label>
+
+                            <!-- When editing event, if any images are added, display them here, with remove link on hover -->
+                            <ul class="event-gallery"
+                                data-add="Pievienot attēlus..."
+                                data-remove="Noņemt attēlu"
+                                data-temp="Šis attēls vēl nav saglabāts"
+                                data-confirm="Tiešām vēlaties dzēst šo attēlu?">
+
+                                <li class="saved" data-remove="Noņemt attēlu">
+                                    <a href="javascript:;">
+                                        <img src="assets/images/img-event-gal-thumb1.jpg" alt="" />
+                                    </a>
+                                </li>
+                                <li class="saved" data-remove="Noņemt attēlu">
+                                    <a href="javascript:;">
+                                        <img src="assets/images/img-event-gal-thumb2.jpg" alt="" />
+                                    </a>
+                                </li>
+                                <li class="saved" data-remove="Noņemt attēlu">
+                                    <a href="javascript:;">
+                                        <img src="assets/images/img-event-gal-thumb2-04.jpg" alt="" />
+                                    </a>
+                                </li>
+                                <li class="saved" data-remove="Noņemt attēlu">
+                                    <a href="javascript:;">
+                                        <img src="assets/images/img-event-gal-thumb4.jpg" alt="" />
+                                    </a>
+                                </li>
+                                <li class="saved" data-remove="Noņemt attēlu">
+                                    <a href="javascript:;">
+                                        <img src="assets/images/img-event-gal-thumb5.jpg" alt="" />
+                                    </a>
+                                </li>
+                                <li class="saved" data-remove="Noņemt attēlu">
+                                    <a href="javascript:;">
+                                        <img src="assets/images/img-event-gal-thumb1.jpg" alt="" />
+                                    </a>
+                                </li>
+                                <li class="saved" data-remove="Noņemt attēlu">
+                                    <a href="javascript:;">
+                                        <img src="assets/images/img-event-gal-thumb2.jpg" alt="" />
+                                    </a>
+                                </li>
+
+                                <!-- When creating a new event, or if no images are added yet, display only the 5 visual placeholders with Buddha silhouette -->
+                                <!--
+                                <li class="empty" data-add="Pievienot attēlus..."></li>
+                                <li class="empty" data-add="Pievienot attēlus..."></li>
+                                <li class="empty" data-add="Pievienot attēlus..."></li>
+                                <li class="empty" data-add="Pievienot attēlus..."></li>
+                                <li class="empty" data-add="Pievienot attēlus..."></li>
+                                 -->
+
+                            </ul>
+
+                            <div class="gallery-add-images">
+                                <div class="add-files-link"
+                                    data-default="Pievienot attēlus pasākuma galerijai"
+                                    data-alt="Izvēlēties citus attēlus (nesaglabātie attēli tiks noņemti)">
+                                    Pievienot attēlus pasākuma galerijai
+                                </div>
+                                <div class="files-selected">Nav izvēlēts neviens fails.</div>
+                                <input type="file" id="gallery_images" name="gallery_images[]" multiple
+                                    data-error="Galerijai iespējams pievienot attēlus tikai JPG vai PNG formātos."
+                                    data-filesp1="Izvēlēti "
+                                    data-filesp2=" faili."
+                                    data-nofiles="Nav izvēlēts neviens fails.">
+                            </div>
+
+                            <!-- When editing event, if any images are added, display them here, with remove button on hover -->
+                        </div>
+
+                        <div class="right">
+                            <a class="button-large  iwillgo" href="javascript:;">Plānoju apmeklēt</a>
+                        </div>
+
+                        <div class="event-star section-exp collapsed">
+                            <div class="inner" data-collapsedheight="150">
+                                <div class="evt-star-image">
+                                    <img src="assets/images/img-event-host1.jpg" alt="" />
+                                    <div class="img-subtitle">Pasniedzējs</div>
+                                </div>
+
+                                <h4 class="evt-star-name">Juris & Bhavani</h4>
+
+                                <p>Lorem ipsum dolor sit amet, con sectetur adipisicing elsicing elit, sed do eiusmod tempor Fincididunt ut labore et dolore magna aliqua is icing eliit, sed do eiusmod tempor tempolorem ipusim usimusim. Lis icing eliit, sed do eiusmod tempor tempolorem ipusim usimusim. Lis icing eliit, sed do eiusmod tempor tempolorem ipusim usimusim. Lis icing eliit, sed do eiusmod tempor tempolorem</p>
+                                <p>Lorem ipsum dolor sit amet, con sectetur adipisicing elsicing elit, sed do eiusmod tempor Fincididunt ut labore et dolore magna aliqua is icing eliit, sed do eiusmod tempor tempolorem ipusim usimusim. Lis icing eliit, sed do eiusmod tempor tempolorem ipusim usimusim. Lis icing eliit, sed do eiusmod tempor tempolorem ipusim usimusim. Lis icing eliit, sed do eiusmod tempor tempolorem</p>
+                                <p>Lorem ipsum dolor sit amet, con sectetur adipisicing elsicing elit, sed do eiusmod tempor Fincididunt ut labore et dolore magna aliqua is icing eliit, sed do eiusmod tempor tempolorem ipusim usimusim. Lis icing eliit, sed do eiusmod tempor tempolorem ipusim usimusim. Lis icing eliit, sed do eiusmod tempor tempolorem ipusim usimusim. Lis icing eliit, sed do eiusmod tempor tempolorem</p>
+                            </div>
+                            <a class="read-more" href="javascript:;" data-default="Lasīt visu" data-alt="Savērst" title="">Lasīt visu</a>
+                        </div>
+
+                        <div class="event-star section-exp collapsed">
+                            <div class="inner" data-collapsedheight="150">
+                                <div class="evt-star-image">
+                                    <img src="assets/images/img-event-host2.jpg" alt="" />
+                                    <div class="img-subtitle">Pasniedzējs</div>
+                                </div>
+
+                                <h4 class="evt-star-name">Hariprem Swami</h4>
+
+                                <p>Lorem ipsum dolor sit amet, con sectetur adipisicing elsicing elit, sed do eiusmod tempor Fincididunt ut labore et dolore magna aliqua is icing eliit, sed do eiusmod tempor tempolorem ipusim usimusim. Lis icing eliit, sed do eiusmod tempor tempolorem ipusim usimusim. Lis icing eliit, sed do eiusmod tempor tempolorem ipusim usimusim. Lis icing eliit, sed do eiusmod tempor tempolorem</p>
+                                <p>Lorem ipsum dolor sit amet, con sectetur adipisicing elsicing elit, sed do eiusmod tempor Fincididunt ut labore et dolore magna aliqua is icing eliit, sed do eiusmod tempor tempolorem ipusim usimusim. Lis icing eliit, sed do eiusmod tempor tempolorem ipusim usimusim. Lis icing eliit, sed do eiusmod tempor tempolorem ipusim usimusim. Lis icing eliit, sed do eiusmod tempor tempolorem</p>
+                                <p>Lorem ipsum dolor sit amet, con sectetur adipisicing elsicing elit, sed do eiusmod tempor Fincididunt ut labore et dolore magna aliqua is icing eliit, sed do eiusmod tempor tempolorem ipusim usimusim. Lis icing eliit, sed do eiusmod tempor tempolorem ipusim usimusim. Lis icing eliit, sed do eiusmod tempor tempolorem ipusim usimusim. Lis icing eliit, sed do eiusmod tempor tempolorem</p>
+                                <p>Lorem ipsum dolor sit amet, con sectetur adipisicing elsicing elit, sed do eiusmod tempor Fincididunt ut labore et dolore magna aliqua is icing eliit, sed do eiusmod tempor tempolorem ipusim usimusim. Lis icing eliit, sed do eiusmod tempor tempolorem ipusim usimusim. Lis icing eliit, sed do eiusmod tempor tempolorem ipusim usimusim. Lis icing eliit, sed do eiusmod tempor tempolorem</p>
+                            </div>
+                            <a class="read-more" href="javascript:;" data-default="Lasīt visu" data-alt="Savērst" title="">Lasīt visu</a>
+                        </div>
+                    </div>
+                </form>
             </div>
 
             <div class="blogside-container">
@@ -683,7 +812,16 @@
         </footer>
     </div>
 
+    <!--<script>window.jQuery || document.write('<script src="assets/js/jquery-1.11.0.min.js"><\/script>')</script>-->
+    <!--<script>window.jQuery || document.write('<script src="http://garavasara.com/assets/vendor.js"><\/script>')</script>-->
+    <!-- Include Date Range Picker Prerequisites (jQuery included in the vendor.js script) -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <link rel="stylesheet" href="assets/css/bootstrap-prefixed.css">
+
+    <!-- Include Date Range Picker -->
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
 
     <script src="assets/js/scripts.js"></script>
 </body>
